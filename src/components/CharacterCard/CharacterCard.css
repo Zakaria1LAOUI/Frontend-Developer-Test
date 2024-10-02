@@ -1,0 +1,76 @@
+.character-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alignement à gauche du texte */
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Empiler les éléments verticalement */
+  align-items: flex-start; /* Alignement à gauche */
+  width: 100%; /* Largeur pleine pour la réactivité */
+  max-width: 380px; /* Largeur maximale pour les cartes */
+  margin: auto; /* Centre la carte dans la grille */
+}
+
+.character-card img {
+  width: 100%;
+  height: auto; /* Conserver le ratio d'aspect */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.character-card .species {
+  background-color: #d4ddfa;
+  border-radius: 2px;
+  padding: 5px;
+  color: rgb(100, 87, 243);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.character-card h2 {
+  font-size: 1em;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.character-card a.view-details {
+  display: inline-block;
+  background-color: #86d198;
+  color: #218838;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.character-card a.view-details:hover {
+  background-color: #adeebb;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .character-card {
+    max-width: 90%; /* Largeur maximale pour les petits écrans */
+    margin: 10px auto; /* Espace autour des cartes */
+  }
+}
+
+@media (max-width: 480px) {
+  .character-card h2 {
+    font-size: 1.1em; /* Taille de police réduite pour les petits écrans */
+  }
+
+  .character-card p {
+    font-size: 0.85em; /* Taille de police réduite pour les petits écrans */
+  }
+
+  .character-card a.view-details {
+    padding: 8px 16px; /* Ajustement de la taille du bouton */
+  }
+}

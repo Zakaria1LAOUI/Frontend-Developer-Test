@@ -1,0 +1,186 @@
+/*CharacterList.css*/
+.characters-list-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Logo styling */
+.logo-image {
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* Banner centered in the middle of the page */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
+
+/* Text Box directly under the banner */
+.text-box-under-banner {
+  background-color: white;
+  position: absolute;
+  padding: 20px 40px;
+  margin-top: 14px; /* Adjust this value if needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: 25%;
+  max-width: 400px; /* Limit the maximum width */
+  left: 40%; /* Center the element */
+  transform: translate(-50%, -100%); /* Center and adjust vertically */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .text-box-under-banner {
+    width: 90%; /* Use more width on smaller screens */
+    font-size: 1rem; /* Reduce font size */
+    margin-top: -80px; /* Adjust vertical position */
+    padding: 15px 20px; /* Reduce padding */
+  }
+}
+
+/* Search Input Section */
+.search-container {
+  margin-top: 100px;
+  margin-bottom: 50px; /* Space below the search input */
+}
+
+.search-input {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+  width: 100%; /* Take the full width */
+  max-width: 400px; /* Limit maximum width */
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #019334;
+  box-shadow: 0 4px 8px rgba(2, 165, 87, 0.4);
+}
+
+.search-input-container {
+  position: relative; /* Positioning for the icon */
+  display: flex; /* Flex display for alignment */
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+}
+
+/* Center the filters container */
+.filters-container {
+  display: flex;
+  justify-content: center; /* Center filters horizontally */
+  align-items: center; /* Center filters vertically */
+  margin: 20px 0;
+  gap: 50px; /* Adjust gap for smaller screens */
+}
+
+.type-filter {
+  text-align: left;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+/* Style for the dropdown filters */
+.filter-dropdown {
+  width: 200px; /* Set the width of the dropdown */
+  padding: 14px; /* Add some padding */
+  margin: 0 10px; /* Add margin between dropdowns */
+  border: 1px solid #019334; /* Border color */
+  border-radius: 6px; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition for hover effect */
+  margin-bottom: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.filter-dropdown:focus {
+  border-color: #019334; /* Vert lorsque l'élément est sélectionné */
+}
+
+.filter-dropdown option {
+  font-family: Arial, Helvetica, sans-serif; /* Même police que le select */
+}
+
+.filter-dropdown option:checked {
+  background-color: #019334; /* Vert pour les options sélectionnées */
+  color: #ffffff; /* Texte blanc pour les options sélectionnées */
+}
+
+.filter-dropdown option:hover {
+  background-color: #019334; /* Option devient verte au survol */
+  color: #ffffff; /* Texte blanc au survol */
+}
+
+
+.footer {
+  background-color: #ccc; /* Apply the desired background color to the entire footer */
+  padding: 20px 0; /* Add some padding for better spacing */
+  text-align: center; /* Center the content if desired */
+}
+
+.logo-image-footer {
+  width: 200px;
+  margin: 20px auto; /* Center the logo */
+}
+.meet {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large; 
+  font: bolder;
+}
+
+/* Responsive adjustments for dropdowns */
+@media (max-width: 768px) {
+  .filter-dropdown {
+    width: 150px; /* Reduce width for smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px; /* Space between rows */
+  margin-bottom: 50px;
+}
+
+/* Responsive adjustments for character grid */
+@media (max-width: 768px) {
+  .character-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    column-gap: 30px; /* Adjust gap between columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .character-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+
+  .filters-container {
+    flex-direction: column; /* Stack filters vertically */
+    gap: 20px; /* Adjust gap between stacked filters */
+  }
+
+  .filters-container {
+    margin-bottom: 100px; /* Reduce bottom margin */
+  }
+}

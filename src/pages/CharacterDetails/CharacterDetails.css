@@ -1,0 +1,178 @@
+/* CharacterDetails.css */
+
+.character-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Centre le texte */
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.logo-image {
+    width: 150px;
+    /* Taille du logo */
+    margin: 20px 0;
+    /* Espacement */
+}
+
+.character-title {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Choix de police pour le titre */
+    font-size: 28px;
+    /* Taille du titre */
+    color: #005073;
+    /* Couleur du titre */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px;
+}
+
+.character-details {
+    display: flex;
+    flex-direction: row;
+    /* Toujours en ligne, image à gauche et texte à droite */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.character-image {
+    width: 30%; /* Largeur fixe pour l'image */
+    height: auto;
+    object-fit: cover; /* Pour ajuster l'image si elle déborde */
+}
+
+.character-info {
+    width: 70%; /* Largeur fixe pour les infos */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bolder;
+}
+
+/* Responsive Styles */
+
+/* Tablettes (768px et plus) */
+@media (max-width: 768px) {
+    .character-details {
+        flex-direction: row; /* Toujours en ligne pour les tablettes */
+    }
+
+    .character-image {
+        width: 35%; /* Ajustement pour l'image */
+    }
+
+    .character-info {
+        width: 65%;
+        text-align: left; /* Alignement à gauche pour maintenir l'aspect visuel */
+    }
+}
+
+/* Téléphones (480px et plus) */
+@media (max-width: 480px) {
+    .character-details {
+        flex-direction: row; /* Maintenir l'image à gauche et le texte à droite */
+        align-items: center;
+    }
+
+    .character-image {
+        width: 40%; /* Ajustement pour l'image sur petits écrans */
+    }
+
+    .character-info {
+        width: 60%; /* Ajustement pour l'info */
+        padding: 15px;
+        text-align: left;
+    }
+}
+
+
+.character-name {
+    font-family: Arial, Helvetica, sans-serif; /* Police différente pour le nom */
+    color: #28a745; /* Couleur verte pour le nom */
+    font-size: 22px; /* Taille du nom */
+    margin-bottom: 15px; /* Espacement en bas du nom */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.character-info ul {
+    list-style: disc; /* Suppression du style par défaut de la liste */
+    padding: 20px; /* Suppression du padding */
+    margin-bottom: 15px; /* Espacement en bas de la liste */
+}
+
+.character-info li {
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+    font-size: 20px; /* Taille de police pour les éléments de la liste */
+    color: #333; /* Couleur du texte */
+    font: bold;
+}
+
+.character-summary {
+    margin-top: 15px; /* Espacement au-dessus du résumé */
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    color: #333; /* Couleur du résumé */
+}
+
+.summary-highlight {
+    color: #28a745; /* Green color for highlighted text in summary */
+    font-style: italic; /* Italique pour le résumé */
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive Styles */
+
+/* Tablettes (768px et plus) */
+@media (max-width: 768px) {
+    .character-card {
+        flex-direction: column; /* Disposition en colonne pour les tablettes */
+    }
+
+    .character-image {
+        width: 100%; /* Image pleine largeur sur tablettes */
+        height: auto; /* Conserve le ratio d'aspect */
+    }
+
+    .character-info {
+        text-align: center; /* Centre le texte sur les tablettes */
+    }
+
+    .character-title {
+        font-size: 24px; /* Réduction de la taille du titre */
+    }
+
+    .character-name {
+        font-size: 20px; /* Réduction de la taille du nom */
+    }
+}
+
+/* Téléphones (480px et plus) */
+@media (max-width: 480px) {
+    .character-title {
+        font-size: 20px; /* Réduction de la taille du titre */
+    }
+
+    .character-name {
+        font-size: 18px; /* Réduction de la taille du nom */
+    }
+
+    .character-details {
+        padding: 10px; /* Réduction de l'espacement dans la carte */
+    }
+
+    .character-image {
+        width: 80%; /* Image plus grande sur téléphone */
+    }
+}
